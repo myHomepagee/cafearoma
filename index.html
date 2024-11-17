@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Café Aroma</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <style>
+        /* Grundlegendes Styling */
+        body {
+            background-color: #f4e1d2; /* Beige Hintergrund */
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333333; /* Dunkelgrauer Text */
+        }
+
+        /* Header mit Bild */
+        header {
+            background-image: url('images/how-to-eat-croissants-with-coffee-1706279818.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 120px 0;
+        }
+
+        header h1 {
+            font-size: 4em;
+            font-family: 'Playfair Display', serif;
+            color: #ffffff;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #6f4f37; /* Dunkelbrauner Hintergrund für die Navigation */
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Galerie unter dem Header */
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px 0;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            object-fit: cover;
+        }
+
+        .gallery img:nth-child(1),
+        .gallery img:nth-child(2),
+        .gallery img:nth-child(3),
+        .gallery img:nth-child(4),
+        .gallery img:nth-child(5) {
+            width: 200px; /* Alle Bilder in der Galerie haben die gleiche Breite */
+            height: 200px; /* Standardhöhe für alle Bilder */
+        }
+
+        /* Abschnitt Über uns */
+        .about-us {
+            text-align: center;
+            padding: 80px 20px;
+            background-color: #f8d7b9; /* Pastellpfirsich Hintergrund */
+            font-family: 'Playfair Display', serif;
+        }
+
+        .about-us h2 {
+            font-size: 3em;
+            color: #6f4f37;
+        }
+
+        .about-us p {
+            font-size: 1.4em;
+            color: #6f4f37;
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+
+        /* Kontaktbereich */
+        .contact {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            padding: 80px 20px;
+        }
+
+        .contact div {
+            background-color: #6f4f37; /* Dunkelbraun für den Kontaktbereich */
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 30%;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        .contact div h3 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #6f4f37;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #d4af37; /* Goldene Links im Footer */
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Café Aroma</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">Über uns</a>
+        <a href="#gallery">Galerie</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+
+    <!-- Galerie -->
+    <div class="gallery" id="gallery">
+        <img src="images/images.jfif" alt="Kaffee mit Croissant">
+        <img src="images/istockphoto-1400831765-612x612.jpg" alt="Kaffee und Gebäck">
+        <img src="images/kaffee.jpg" alt="Tasse Kaffee">
+        <img src="images/images (2).jfif" alt="Warm getränk">
+        <img src="images/images (1).jfif" alt="Snacks im Café">
+    </div>
+
+    <!-- Abschnitt Über uns -->
+    <div class="about-us" id="about">
+        <h2>Über uns</h2>
+        <p>Willkommen bei Café Aroma, einem gemütlichen Rückzugsort im Herzen der Stadt. Bei uns erwartet dich eine Auswahl an frisch gebrühtem Kaffee, leckeren Snacks und einer entspannten Atmosphäre. Komme vorbei und genieße deine Auszeit bei uns!</p>
+    </div>
+
+    <!-- Kontaktbereich -->
+    <div class="contact" id="contact">
+        <div>
+            <h3>Öffnungszeiten</h3>
+            <p>Montag bis Freitag: 08:00 - 18:00 Uhr</p>
+            <p>Samstag: 09:00 - 14:00 Uhr</p>
+            <p>Sonntag: Geschlossen</p>
+        </div>
+        <div>
+            <h3>Adresse</h3>
+            <p>Café Aroma</p>
+            <p>Musterstraße 123</p>
+            <p>12345 Musterstadt</p>
+        </div>
+        <div>
+            <h3>Kontakt</h3>
+            <p>Email: <a href="mailto:info@cafe-aroma.de">info@cafe-aroma.de</a></p>
+            <p>Telefon: +49 123 456789</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Café Aroma. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>
